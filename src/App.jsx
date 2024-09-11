@@ -7,7 +7,7 @@ import usePageBottom from './hooks/usePageBottom.jsx';
 import useWindowResize from './hooks/useWindowResize.jsx';
 import useDetectDevice from './hooks/useDetectDevice.jsx';
 import ToggleThemeButton from './components/ToggleThemeButton.jsx';
-// import TodoList from "./components/TodoList";
+
 
 
 function App() {
