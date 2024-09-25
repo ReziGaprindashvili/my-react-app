@@ -4,9 +4,10 @@ import useRequest from "../hooks/useRequest"
 
 
 const MainPage = () => {
+    const {sendRequest} = useRequest({method: 'DELETE'})
     const {response, error, loading, resendRequest} = useFetch({url: '/api/v1/users', method: "GET"})
     const userList = response?.items.map(user => {
-    const {sendRequest} = useRequest({method: 'DELETE'})
+    
       return {
       firstName: user.firstName,
       lastName: user.lastName,
