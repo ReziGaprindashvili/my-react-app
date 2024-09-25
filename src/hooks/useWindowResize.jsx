@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 
 const useWindowResize = () => {
-    const[width, setWidth] = useState(window.innerWidth)
-    const[height, setHeight] = useState(window.innerHeight)
+    const[width, setWidth] = useState(Window.innerWidth)
+    const[height, setHeight] = useState(Window.innerHeight)
 
     useEffect(() => {
         const handleResize = () => {
-            setWidth(window.innerWidth)
-            setHeight(window.innerHeight)
+            setWidth(Window.innerWidth)
+            setHeight(Window.innerHeight)
         }
 
         window.addEventListener('resize', handleResize)

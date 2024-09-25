@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 const usePageBottom = () => {
     const [bottom, setBottom] = useState(false)
 
-    console.log(bottom)
+    // console.log(bottom)
     
     useEffect(() => {
         const handleScroll = () => {
